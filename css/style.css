@@ -458,19 +458,19 @@ img {
   .promo__item--house::after {
     width: 75px;
     height: 72px;
-    background-image: url("./img/promo-image-1.svg");
+    background-image: url("../img/promo-image-1.svg");
     top: 60px;
     margin-left: -37px; }
   .promo__item--burger::after {
     width: 74px;
     height: 70px;
-    background-image: url("./img/promo-image-2.svg");
+    background-image: url("../img/promo-image-2.svg");
     top: 61px;
     margin-left: -37px; }
   .promo__item--present::after {
     width: 64px;
     height: 76px;
-    background-image: url("./img/promo-image-3.svg");
+    background-image: url("../img/promo-image-3.svg");
     top: 56px;
     margin-left: -33px; }
 
