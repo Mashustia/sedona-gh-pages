@@ -2,13 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Гостинницы Sedona</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="inner-page">
     <header class="page-header container">
       <a class="page-header__logo logo" href="index.html" tabindex="1">
-        <img src="img/logo.png" width="138px" height="70px" alt="Седона - городок в Аризоне">
+        <img src="img/logo.png" width="138" height="70" alt="Седона - городок в Аризоне">
       </a>
       <nav class="page-header__navigation main-nav">
         <ul class="main-nav__list">
@@ -30,14 +31,14 @@
 
 
     <main class="container">
-      <h1  class="visually-hidden">Каталог гостинниц</h2>
+      <h1 class="visually-hidden">Каталог гостинниц</h1>
 
       <section class="hotel-filter">
         <h2 class="visually-hidden">Фильтр</h2>
         <form class="hotel-filter__form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="hotel-filter__options options">
+            <legend class="options__title">Инфраструктура:</legend>
             <div class="options__inner-wrapper">
-              <legend class="options__title">Инфраструктура:</legend>
               <ul class="options__list">
                 <li class="options__item">
                   <div class="checkbox">
@@ -61,8 +62,8 @@
             </div>
           </fieldset>
           <fieldset class="hotel-filter__options options">
+            <legend class="options__title">Тип жилья:</legend>
             <div class="options__inner-wrapper">
-              <legend class="options__title">Тип жилья:</legend>
               <ul class="options__list">
                 <li class="options__item">
                   <div class="checkbox">
@@ -141,7 +142,7 @@
 
         <ul class="catalog__list">
           <li class="catalog__item hotel">
-            <img class="hotel__image" width="135px" height="90px" src="img/hotel-1.jpg" alt="Изображение отеля Amara Resort & Spa">
+            <img class="hotel__image" width="135" height="90" src="img/hotel-1.jpg" alt="Изображение отеля Amara Resort & Spa">
             <div class="hotel__information">
               <h3 class="hotel__title"><a class="hotel__link" href="#">Amara Resort & Spa</a></h3>
               <div class="hotel__table">
@@ -162,7 +163,7 @@
           </li>
 
           <li class="catalog__item hotel">
-            <img class="hotel__image" width="135px" height="90px" src="img/hotel-2.jpg" alt="Изображение отеля Desert Quail Inn">
+            <img class="hotel__image" width="135" height="90" src="img/hotel-2.jpg" alt="Изображение отеля Desert Quail Inn">
             <div class="hotel__information">
               <h3 class="hotel__title"><a class="hotel__link" href="#">Desert Quail Inn</a></h3>
               <div class="hotel__table">
@@ -183,7 +184,7 @@
           </li>
 
           <li class="catalog__item hotel">
-            <img class="hotel__image" width="135px" height="90px" src="img/hotel-3.jpg" alt="Изображение отеля Villas at Poco Diablo">
+            <img class="hotel__image" width="135" height="90" src="img/hotel-3.jpg" alt="Изображение отеля Villas at Poco Diablo">
             <div class="hotel__information">
               <h3 class="hotel__title"><a class="hotel__link" href="#">Villas at Poco Diablo</a></h3>
               <div class="hotel__table">
@@ -206,36 +207,30 @@
       </section>
     </main>
 
-    <footer class="page-footer container">
-      <div class="page-footer__hashtag hashtag">
+    <footer class="page-footer page-footer container">
+      <div class="page-footer__block hashtag">
         <p class="hashtag__text">#visitSEDONA</p>
       </div>
 
-      <div class="page-footer__social social">
+      <div class="page-footer__block page-footer__block--center social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">
-              <span class="visually-hidden">Twitter</span>
-            </a>
+            <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Twitter</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">
-              <span class="visually-hidden">Facebook</span>
-            </a>
+            <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Facebook</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">
-              <span class="visually-hidden">YouTube</span>
-            </a>
+            <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">YouTube</span></a>
           </li>
         </ul>
       </div>
 
-      <div class="page-footer__copyright copyright">
-        <span class="copyright__text">Website by</span>
-        <a class="copyright__link" href="#">
-          <span class="visually-hidden">HTML Academy</span>
-        </a>
+      <div class="page-footer__block">
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Website by</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
+        </div>
       </div>
     </footer>
   </body>

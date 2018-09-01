@@ -2,13 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Sedona</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header container">
       <a class="page-header__logo logo" tabindex="1">
-        <img src="img/logo.png" width="138px" height="70px" alt="Седона - городок в Аризоне">
+        <img src="img/logo.png" width="138" height="70" alt="Седона - городок в Аризоне">
       </a>
       <nav class="page-header__navigation main-nav">
         <ul class="main-nav__list">
@@ -34,7 +35,7 @@
 
       <section class="greeting-block">
         <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-        <img class="greeting-block_image" src="img/welcome-to-sedona.png" width="458px" height="352px" alt="Welcome to the gogreous Sedona">
+        <img class="greeting-block_image" src="img/welcome-to-sedona.png" width="458" height="352" alt="Welcome to the gogreous Sedona">
       </section>
 
       <section class="advantages">
@@ -51,7 +52,7 @@
               <span class="advantages__number">— №1 —</span>
               <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img class="advantages__image" src="img/advantages-image-1.jpg" width="800px" height="256px" alt="Изображение центра города">
+            <img class="advantages__image" src="img/advantages-image-1.jpg" width="800" height="256" alt="Изображение центра города">
           </div>
 
           <ul class="promo__list">
@@ -75,7 +76,7 @@
               <span class="advantages__number">— №2 —</span>
               <p class="advantages__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
-            <img class="advantages__image advantages__image--first-place" src="img/advantages-image-2.jpg" width="800px" height="256px" alt="Изображение Моста Дьявола">
+            <img class="advantages__image advantages__image--first-place" src="img/advantages-image-2.jpg" width="800" height="256" alt="Изображение Моста Дьявола">
           </div>
           <div class="advantages__item advantages__item--gray">
             <h3 class="advantages__title">Небольшая площадь</h3>
@@ -99,25 +100,25 @@
         <h2 class="visually-hidden">Поиск отеля</h2>
         <span class="hotel-search__question">Заинтересовались?</span>
         <p class="hotel-search__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a class="button hotel-search__button" href="#">Поиск гостиницы в Седоне</a>
+        <a class="button hotel-search__link" href="#">Поиск гостиницы в Седоне</a>
       </section>
 
       <section class="map">
         <h2 class="visually-hidden">Карта проезда</h2>
         <div class="map_wrapper">
-          <img class="map-image" width="1200px" height="593px" src="img/map.jpg" alt="Карта Седоны">
-        </div class="map_wrapper">
+          <img class="map-image" width="1200" height="593" src="img/map.jpg" alt="Карта Седоны">
+        </div>
         <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d550541.9324518224!2d-111.86598069416405!3d35.040661871618745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1534549050108"
-          width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+          width="1200" height="593" style="border:0" allowfullscreen></iframe>
       </section>
     </main>
 
     <footer class="page-footer page-footer--transparent container">
-      <div class="page-footer__hashtag hashtag">
+      <div class="page-footer__block hashtag">
         <p class="hashtag__text">#visitSEDONA</p>
       </div>
 
-      <div class="page-footer__social social">
+      <div class="page-footer__block page-footer__block--center social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Twitter</span></a>
@@ -131,9 +132,11 @@
         </ul>
       </div>
 
-      <div class="page-footer__copyright copyright">
-        <span class="copyright__text">Website by</span>
-        <a class="copyright__link" href="#"><span class="visually-hidden">HTML Academy</span></a>
+      <div class="page-footer__block">
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Website by</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
+        </div>
       </div>
     </footer>
 
@@ -141,35 +144,46 @@
 
     <section class="modal-search modal">
       <h2 class="visually-hidden">Поиск гостинницы в Седоне</h2>
-      <form class="modal-search__form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="">
-          Дата заезда:
-          <input type="text" name="">
-        </label>
-        <label class="">
-          Дата выезда:
-          <input class="" type="text" name="">
-        </label>
+      <form class="modal-search__form" action="https://echo.htmlacademy.ru" method="get">
+        <div class="modal-search__fields field">
+          <label class="field__text" for="arrival-date">Дата заезда:</label>
+          <input class="field__input field__input--date" type="text" id="arrival-date" name="arrival-date" value="24 апреля 2017">
+          <button class="button field__calendar" type="button">
+            <span class="visually-hidden">Календарь</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+          </button>
+        </div>
 
-        <div class="">
-          <label class="m" for="">Взрослые:</label>
-          <div class="">
-            <button class="modal-search__button modal-search__button--minus"  type="button" name="button-minus"></button>
-            <input class="" id="" type="text" name="" value="2">
-            <button class="modal-search__button modal-search__button--plus"  type="button" name="button-plus"></button>
+        <div class="modal-search__fields field">
+          <label class="field__text" for="date-of-departure">Дата выезда:</label>
+          <input class="field__input field__input--date" type="text" id="date-of-departure" name="date-of-departure" value="4 июля 2017">
+          <button class="button field__calendar" type="button">
+            <span class="visually-hidden">Календарь</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+          </button>
+        </div>
+
+        <div class="modal-search__fields field field--adults">
+          <label class="field__text" for="adults">Взрослые:</label>
+          <div class="field__input-block">
+            <button class="button field__button field__button--minus"  type="button" name="button-minus"></button>
+            <input class="field__input field__input--numbers" id="adults" type="text" name="adults" value="2">
+            <button class="button field__button field__button--plus"  type="button" name="button-plus"></button>
           </div>
         </div>
 
-        <div class="">
-          <label class="" for="">Дети:</label>
-          <div class="">
-              <button class="modal-search__button modal-search__button--minus"  type="button" name="button-minus"></button>
-              <input class="" id="" type="text" name="" value="0">
-              <button class="modal-search__button modal-search__button--plus"  type="button" name="button-plus"></button>
+        <div class="modal-search__fields field field--children">
+          <label class="field__text" for="children">Дети:</label>
+          <div class="field__input-block">
+            <button class="button field__button field__button--minus"  type="button" name="button-minus"></button>
+            <input class="field__input field__input--numbers" id="children" type="text" name="children" value="0">
+            <button class="button field__button field__button--plus"  type="button" name="button-plus"></button>
           </div>
         </div>
+        <button class="button modal-search__button">Найти</button>
       </form>
-      <button type="button button__close" name="button"><span class="visually-hidden">Закрыть</span></button>
+      <!-- <button type="button button__close" name="button"><span class="visually-hidden">Закрыть</span></button> -->
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
